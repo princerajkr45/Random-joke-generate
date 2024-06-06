@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
             const response = await fetch("https://official-joke-api.appspot.com/random_joke");
             const joke = await response.json();
-            jokeContainer.innerHTML = `<p>${joke.setup}</p><p><strong>${joke.punchline}</strong></p>`;
+            jokeContainer.innerHTML = `<p>${joke.setup}</p><p><b>${joke.punchline}</b></p>`;
         } catch (error) {
             jokeContainer.innerHTML = "<p>Sorry, something went wrong. Please try again later.</p>";
         }
