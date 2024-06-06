@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } catch (error) {
             jokeContainer.innerHTML = "<p>Sorry, something went wrong. Please try again later.</p>";
         }
+        
     };
 
     jokeButton.addEventListener("click", fetchJoke);
